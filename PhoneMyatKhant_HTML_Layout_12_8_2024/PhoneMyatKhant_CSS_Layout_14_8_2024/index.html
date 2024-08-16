@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Test</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Link to CSS file -->
+  </head>
+  <body>
+    <div class="fixed"><a href="#position">Back to Top</a></div>
+    <section id="position">
+      <h2 class="title">Relative & Absolute</h2>
+      <div class="container">
+        <div>
+          <div class="block relative">
+            <div class="block absolute">Absolute</div>
+          </div>
+        </div>
+        <pre>
+          Absolute container sitting on relative container 
+          position: absolute 
+          top: 0
+          left: 0
+          Display fixed on "Back to Top" button and display sticky on title.
+        </pre>
+      </div>
+    </section>
+    <!-- blk -->
+    <section id="blk">
+      <h2 class="title">Display Block & Inline-Block</h2>
+      <div class="container">
+        <div>
+          <div class="block">Block</div>
+          <div class="block">Block</div>
+        </div>
+        <div style="min-width: 300px">
+          <div class="block inline-block">Inline-Block</div>
+          <div class="block inline-block">Inline-Block</div>
+        </div>
+        <pre>Display block and inline-block on div tag</pre>
+      </div>
+    </section>
+    <!-- display flex  -->
+    <section id="flex">
+      <h2 class="title">Flex</h2>
+
+      <div class="container">
+        <div class="flex-container">
+          <div>1</div>
+          <div class="order">2</div>
+          <div>3</div>
+        </div>
+        <pre>
+          display: flex
+          flex-wrap: wrap
+          align-items: center
+          justify-content: space-between<br/>
+          order: 2  (box no.2)
+          align-self: flex-end  (box no.2)
+        </pre>
+      </div>
+
+      <div class="container">
+        <div class="flex-container flexcol">
+          <div>1</div>
+          <div class="order">2</div>
+          <div>3</div>
+        </div>
+        <pre>
+          display: flex
+          flex-wrap: wrap
+          align-items: center
+          justify-content: space-between<br/>
+          order: 2  (box no.2)
+          align-self: flex-end  (box no.2)
+        </pre>
+      </div>
+    </section>
+    <!-- float  -->
+    <section id="float">
+      <h2 class="title">Float & Clear</h2>
+      <div class="container">
+        <div class="float-container">
+          <div class="float-left">Float Left</div>
+          <div class="float-right">Float Right</div>
+          <p style="clear: both">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+            veniam est aut aperiam laboriosam ad vitae ullam, quia ut non eos.
+            Culpa fuga ex aliquid dignissimos atque deleniti alias laboriosam?
+          </p>
+        </div>
+        <pre>
+          .float-container::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+          Clear both on the p tag under left and right float boxes.</pre
+        >
+      </div>
+    </section>
+    <!-- box sizing  -->
+    <section id="box-sizing">
+      <h2 class="title">Box Sizing</h2>
+      <div class="container">
+        <div class="div1"><p>Border Box</p></div>
+        <div class="div2"><p>Content Box</p></div>
+
+        <pre>
+          Content box's width is larger than 
+          border box when the padding of 50px is added.</pre
+        >
+      </div>
+    </section>
+    <section id="before-after">
+      <h2 class="title">Before & After</h2>
+      <div class="container">
+        <div>
+          <button class="icon-button">
+            <span class="button-text">Click Me</span>
+          </button>
+        </div>
+        <pre>
+          Smiley emoji on both side of the button with ::before and ::after</pre
+        >
+      </div>
+    </section>
+  </body>
+</html>

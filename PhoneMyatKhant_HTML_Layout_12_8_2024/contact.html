@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section
+      id="nav"
+      style="
+        display: flex;
+        flex-direction: column;
+
+        padding: 1rem;
+        gap: 10px;
+        background-color: azure;
+      "
+    >
+      <a href="index.html"><h2>Go to home.html</h2></a>
+      <a href="contact.html"><h2>Go to contact.html</h2></a>
+    </section>
+    <section id="contact-form">
+      <h2 class="title">Text Input With Label</h2>
+      <form action="#" method="post">
+        <!-- text input -->
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
+        </div>
+
+        <!-- email -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <!-- radio button -->
+        <div class="form-group">
+          <h2 class="title">Radio Button</h2>
+          <input
+            type="radio"
+            id="contact-email"
+            name="contact-method"
+            value="email"
+          />
+          <label style="display: inline-block" for="contact-email">yes</label>
+
+          <input
+            type="radio"
+            id="contact-phone"
+            name="contact-method"
+            value="phone"
+          />
+          <label style="display: inline-block" for="contact-phone">no</label>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-group">
+          <h2 class="title">Checkbox</h2>
+          <input
+            type="checkbox"
+            id="subscribe-news"
+            name="subscribe-news"
+            value="newsletter"
+          />
+          <label style="display: inline-block" for="subscribe-news">box1</label>
+
+          <input
+            type="checkbox"
+            id="subscribe-updates"
+            name="subscribe-updates"
+            value="updates"
+          />
+          <label style="display: inline-block" for="subscribe-updates"
+            >box2</label
+          >
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group">
+          <h2 class="title">Textarea</h2>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Enter your message"
+            rows="5"
+          ></textarea>
+        </div>
+
+        <!-- select,option & optgroup -->
+        <div class="form-group">
+          <h2 class="title">Select, Option & Optgroup</h2>
+          <label for="department">Staff</label>
+          <select id="department" name="department">
+            <option value="" disabled selected>Select a person</option>
+            <optgroup label="Male">
+              <option value="sales-support">Mg Mg</option>
+              <option value="sales-enquiry">Kyaw Kyaw</option>
+            </optgroup>
+            <optgroup label="Female">
+              <option value="tech-support">Su Su</option>
+              <option value="tech-enquiry">Ma Ma</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <!-- button -->
+        <div class="form-group">
+          <h2 class="title">Button</h2>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+
+      <a href="#nav">back to top</a>
+    </section>
+  </body>
+</html>

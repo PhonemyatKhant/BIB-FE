@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Elements Example</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section
+      id="nav"
+      style="
+        display: flex;
+        flex-direction: column;
+
+        padding: 1rem;
+        gap: 10px;
+        background-color: azure;
+      "
+    >
+      <a href="index.html"><h2>Go to home.html</h2></a>
+      <a href="contact.html"><h2>Go to contact.html</h2></a>
+    </section>
+    <!-- headings -->
+    <section id="headings">
+      <h2 class="title">Headings</h2>
+      <h1>H1 Heading</h1>
+      <h2>H2 Heading</h2>
+      <h3>H3 Heading</h3>
+      <h4>H4 Heading</h4>
+      <h5>H5 Heading</h5>
+      <h6>H6 Heading</h6>
+    </section>
+
+    <!-- paragraph  -->
+    <section id="paragraph">
+      <h2 class="title">Paragraph</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum at earum
+        voluptate praesentium, quam porro? Reprehenderit quasi sunt soluta illum
+        sit voluptatum eaque ipsa, tenetur optio illo doloribus ducimus eveniet.
+      </p>
+    </section>
+
+    <!-- imgae  -->
+    <section id="images">
+      <h2 class="title">Images</h2>
+      <img src="./img/node-express.jpg" alt="Sample Image 1" />
+      <img src="./img/react-project-image.jpg" alt="Sample Image 2" />
+      <img src="./img/react-project-img.jpg" alt="Sample Image 3" />
+    </section>
+
+    <!-- links -->
+    <section id="links">
+      <h2 class="title">Links</h2>
+
+      <p>
+        <a href="https://www.google.com" target="_blank"
+          >Click here to visit GOOGLE!</a
+        >
+      </p>
+
+      <p><a href="#nav">GO TO TOP!</a></p>
+    </section>
+
+    <!-- list  -->
+    <section id="list">
+      <h2 class="title">Lists</h2>
+      <!-- ul -->
+      <h2>Unordered List</h2>
+      <ul>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+      </ul>
+
+      <!-- ol -->
+      <h2>Ordered List</h2>
+      <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ol>
+
+      <!-- dl -->
+      <h2>Description List</h2>
+      <dl>
+        <dt>HTML</dt>
+        <dd>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis
+          ipsum dicta, provident, praesentium velit iusto aspernatur assumenda
+          ex fugit maxime mollitia ad placeat a autem dolorum? Consequuntur, vel
+          odio?
+        </dd>
+        <dt>CSS</dt>
+        <dd>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          quo asperiores odio nostrum nam nesciunt recusandae excepturi? In
+          fuga, exercitationem voluptate voluptatum cupiditate, molestias
+          maiores praesentium odio assumenda nam commodi.
+        </dd>
+      </dl>
+    </section>
+
+    <!-- table -->
+    <section id="table">
+      <h2 class="title">Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="2">No.</th>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Contact</th>
+          </tr>
+          <tr>
+            <th>Phone</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Kyaw Kyaw</td>
+            <td>09635635635</td>
+            <td>kyawkyaw@gmail.com</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Mg Mg</td>
+            <td>09680680579</td>
+            <td>mgmg@gmail.com</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Ma Ma</td>
+            <td>098648708698</td>
+            <td>mama@gmail.com</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Pyae Pyae</td>
+            <td>09386798987</td>
+            <td>pyaepyae@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- audio -->
+    <section id="audio">
+      <h2 class="title">Audio</h2>
+      <h2>Heavy Rain White Noice</h2>
+      <audio controls>
+        <source src="./media/heavy-rain.mp3" type="audio/mpeg" />
+      </audio>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+      <h2 class="title">Video</h2>
+      <h2>Rabbit MP4</h2>
+      <video controls width="320" height="240">
+        <source src="./media/rabbit.mp4" type="video/mp4" />
+      </video>
+      <a href="#nav">back to top</a>
+    </section>
+  </body>
+</html>

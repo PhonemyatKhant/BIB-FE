@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-VariableFont_opsz\,wght.ttf')
+}
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  color: #333;
+}
+
+h2.title {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  background-color: #f0f8ff;
+  border-radius: 4px;
+  box-shadow: inset 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+p {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+img {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* custom css  */
+
+/* colors  */
+.colors {
+  background-color: #007bff;
+  color: aquamarine;
+  padding: 20px;
+  border-radius: 20px;
+  width: fit-content;
+}
+/* background */
+.bg {
+  background: url("../img/react-project-image.jpg") no-repeat center/cover;
+  width: 250px;
+  height: 250px;
+  display: grid;
+  place-items: center;
+}
+.bg p {
+  background-color: white;
+  color: yellowgreen;
+  font: 2em;
+  padding: 20px;
+}
+
+/* margin padding border width height  */
+.mpbwh {
+  display: inline-block;
+  padding: 20px;
+  border: 2px solid #333;
+}
+.box {
+  margin: 20px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 3px solid yellowgreen;
+}
+
+/* texts  */
+
+.text-color {
+  color: brown;
+}
+.text-align {
+  text-align: justify;
+}
+.text-decoration {
+  text-decoration: underline #333 double 2px;
+}
+.text-spacing {
+  text-indent: 20px;
+  letter-spacing: 5px;
+  line-height: 0.8;
+  word-spacing: 5px;
+  white-space: wrap;
+}
+.text-transform{
+  text-transform: capitalize;
+}
