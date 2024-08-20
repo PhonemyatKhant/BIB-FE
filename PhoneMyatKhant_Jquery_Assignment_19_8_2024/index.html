@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jquery Assignment1 | BIB</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section id="jquery-events" class="section">
+    <h2 class="title">Jquery Events</h2>
+    <ul class="jquery-event-list">
+      <li> <button id="click-btn" class="btn">Click</button></li>
+      <li> <button id="dbclick-btn" class="btn">Double Click</button></li>
+      <li id="mouse-enter-blk" class="blk">Mouse Enter</li>
+      <li id="mouse-leave-blk" class="blk">Mouse Leave</li>
+      <li id="hover-blk" class="blk">Hover</li>
+      <li> <input class="jquery-input" id="input" placeholder="Focus & Blur"></li>
+      <li>
+        <div id="on-blk" class="blk">On (click, hover)</div>
+      </li>
+    </ul>
+  </section><!-- /#jquery-events -->
+
+  <section id="jquery-effects" class="section">
+    <h2 class="title">Jquery Effects</h2>
+
+    <div class="hst-effect-blk">
+      <ul class="jquery-effect-list">
+        <li><button class="btn" id="hide-btn">Hide</button>
+        </li>
+        <li> <button class="btn" id="show-btn">Show</button></li>
+        <li> <button class="btn" id="toggle-btn">Toggle</button></li>
+      </ul>
+      <div id="effect-blk" class="blk">HST Block</div>
+    </div><!-- /.hst-effect-blk -->
+
+    <div class="fade-effect-blk">
+      <ul class="jquery-effect-list">
+        <li> <button class="btn" id="fadeout-btn">Fade Out</button></li>
+        <li><button class="btn" id="fadein-btn">Fade In</button>
+        </li>
+        <li> <button class="btn" id="fadetoggle-btn">Fade Toggle</button></li>
+        <li> <button class="btn" id="fadeto-btn">Fade To </button></li>
+      </ul>
+      <div id="fade-blk" class="blk">Fade Block</div>
+    </div><!-- /.fade-effect-blk -->
+
+    <div class="slide-effect-blk">
+      <ul class="jquery-effect-list">
+        <li> <button class="btn" id="slideup-btn">Slide Up</button></li>
+        <li><button class="btn" id="slidedown-btn">Slide Down</button>
+        </li>
+        <li> <button class="btn" id="slidetoggle-btn">Slide Toggle</button></li>
+      </ul>
+      <div id="slide-blk" class="blk">Slide Block</div>
+    </div><!-- /.slide-effect-blk -->
+
+  </section><!-- /#jquery-effects -->
+
+
+  <section id="jquery-html" class="section">
+    <h2 class="title">Jquery HTML</h2>
+
+    <div>
+      <label for="jquery-html">Input Some Text</label>
+      <input id="html-input" type="text" class="jquery-input" name="jquery-html">
+      <div class="set-blk blk" id="set-blk">Original Text Here </div>
+      <button id="set-btn" class="btn">Change Text </button>
+    </div>
+
+    <div class="add-remove-blk">
+      <ul>
+        <li><button class="btn" id="append-btn">Append</button></li>
+        <li><button class="btn" id="prepend-btn">Prepend</button></li>
+        <li><button class="btn" id="before-btn">Before</button></li>
+        <li><button class="btn" id="after-btn">After</button></li>
+        <li><button class="btn" id="empty-btn">Empty</button></li>
+      </ul>
+      <div class="content-blk">
+        <ul>
+          <li id="original">Original</li>
+        </ul>
+      </div>
+    </div><!-- /.add-remove-blk-->
+
+    <div class="add-remove-class-blk">
+      <ul class="jquery-effect-list">
+        <li><button class="btn" id="add-class-btn">Add Background Color</button></li>
+        <li><button class="btn" id="remove-class-btn">Remove Background Color</button></li>
+        <li><button class="btn" id="toggle-class-btn">Toggle Background</button></li>
+        <li><button class="btn" id="css-btn">Add CSS MARGIN</button></li>
+      </ul>
+      <div id="background-blk" class="background-blk"></div>
+    </div><!-- /.add-remove-class-blk-->
+
+  </section>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/style.js"></script>
+</body>
+
+</html>

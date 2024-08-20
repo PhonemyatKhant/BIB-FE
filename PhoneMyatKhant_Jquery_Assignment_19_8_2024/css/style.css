@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-VariableFont_opsz\,wght.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: 'Inter', sans-serif;
+}
+
+.section {
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.title {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 123, 255, 0.2);
+  background-color: #343434;
+  color: #fff;
+  font-size: 1.8em;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.blk {
+  width: 500px;
+
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #333;
+  color: #fff;
+  border-radius: 0.5rem;
+
+}
+
+.btn {
+
+  width: 200px;
+  border: none;
+  background-color: rgb(45, 39, 39);
+  color: #f5f5f5;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  aspect-ratio: 3;
+}
+
+.jquery-event-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.mouse-enter-blk {
+  background-color: aquamarine;
+}
+
+.mouse-leave-blk {
+  background-color: yellowgreen;
+}
+
+.mouse-enter-blk {
+  background-color: aquamarine;
+}
+
+.jquery-input {
+  width: 250px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 5px;
+}
+
+.jquery-input:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-color: rgb(48, 168, 248);
+}
+
+.hst-effect-blk,
+.fade-effect-blk,
+.slide-effect-blk,
+.add-remove-blk,
+.add-remove-class-blk {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  margin: 10px 0;
+  gap: 10px;
+}
+
+.jquery-effect-list {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.set-blk {
+  margin: 10px 0;
+
+  font-size: 2rem;
+  text-align: center;
+}
+
+.content-blk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #343434;
+  color: white;
+  min-width: 500px;
+  gap: 10px;
+}
+
+.background-blk {
+  width: 300px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.bgcolor-yellowgreen {
+  background-color: yellowgreen;
+}
