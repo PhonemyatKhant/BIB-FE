@@ -12,46 +12,18 @@ body {
   background-color: #888282;
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
-
 }
 
-/*common white block styles */
-.header,
-.gnav,
-/*col left */
-.col-left,
-.left-header,
-.left-nav,
-.left-footer,
-/*col right */
-.col-right,
-.right-header,
-/*col right art01 */
-.art01-list,
-.art01-header,
-.art01-p,
-.art01-footer,
-/*col right art02 */
-.art02-list,
-.art02-header,
-.col01,
-.col02,
-.art02-footer,
-.right-footer,
-/*main footer */
-.footer {
+/*inner white block */
+.cmn-box {
   padding: 15px;
   border: solid 1.5px #333;
   background-color: #e7e4e4;
   text-align: center;
 }
 
-/*common outer grey block styles*/
-.header,
-.col-left,
-.col-right,
-.art01-list,
-.art02-list {
+/*outer grey block*/
+.outer-box {
   padding-top: 0;
   background-color: #bab9b9;
 }
@@ -94,22 +66,18 @@ body {
   justify-self: center;
 }
 
-
-
 .col-left,
 .col-right,
-.art01-list,
-.art02-list {
+.flex-col {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.art01-color--lightgrey,
-.art02-color--lightgrey {
+.color-lightgrey {
   background-color: #cecdcd;
 }
 
-.footer-color--darkgrey {
+.color-darkgrey {
   background-color: #a59d9d;
 }
