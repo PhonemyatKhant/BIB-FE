@@ -1,0 +1,258 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../font/Inter-VariableFont_opsz\,wght.ttf');
+}
+
+:root {
+
+  --background-light: #b27f7f;
+  --background-dark: #7c5959;
+  --secondary-color: #76c38f;
+  --background-grey: #444444;
+  --background-black: #282728;
+  --text-grey: #979797;
+  --border-radius: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-light);
+  color: #333;
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 30px;
+  background-color: var(--secondary-color);
+  color: var(--background-black);
+
+}
+
+.logo-blk {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.gnav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+
+.menu-toggle {
+
+  display: none;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #333;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-toggle:hover span {
+  background-color: #555;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.gnav li:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width:900px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .gnav {
+    position: fixed;
+    top: 71px;
+    right: -300px;
+    flex-direction: column;
+    justify-content: start;
+    width: 300px;
+    height: 100%;
+    padding: 40px;
+    background-color: var(--secondary-color);
+    color: var(--background-black);
+    transition: right 0.3s ease-in-out;
+    gap: 50px;
+  }
+}
+
+.sec-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px;
+  background-color: var(--text-grey);
+}
+
+.sec1,
+.sec2,
+.sec3 {
+  width: 100vw;
+  padding: 40px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  min-height: 100vh;
+}
+
+.sec1 {
+  background-color: var(--background-light);
+}
+
+.sec2 {
+  background-color: var(--secondary-color);
+}
+
+.sec3 {
+  background-color: var(--background-black);
+}
+
+.top-btn {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 30px;
+  margin: 30px;
+  background-color: yellowgreen;
+  text-align: center;
+  cursor: pointer;
+  aspect-ratio: 1;
+  border-radius: 100%;
+}
+
+.tabs {
+  margin: auto;
+  margin-top: 50px;
+  border: 4px solid var(--secondary-color);
+  max-width: 960px;
+}
+
+.tabs-nav {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-color);
+  border-bottom: 4px solid var(--secondary-color);
+}
+
+.tabs-nav li {
+  margin: 2px;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 3px;
+
+}
+
+.tab-active {
+  background-color: yellowgreen;
+
+}
+
+.tab-content {
+  padding: 10px;
+  background-color: whitesmoke;
+}
+
+.tab-ttl {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.tab-txt {
+  font-size: 1rem;
+}
+
+.accordion {
+  width: 100%;
+  overflow: hidden;
+  margin: 20px auto;
+  border: 1px solid #fff;
+  max-width: 600px;
+  border-radius: 4px;
+}
+
+.accordion-ttl {
+  margin: 0;
+  padding: 15px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-ttl:hover {
+  background-color: #5fa377;
+}
+
+.accordion-content {
+  display: none;
+  padding: 15px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 16px;
+  border-top: 1px solid #ddd;
+}
+
+.accordion-ttl.active {
+  background-color: #5fa377;
+}
