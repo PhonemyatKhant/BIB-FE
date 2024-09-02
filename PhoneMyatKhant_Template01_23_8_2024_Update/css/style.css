@@ -230,6 +230,7 @@ li {
   background-color: #fff;
   text-align: center;
   cursor: pointer;
+  transition: all .2s;
   max-width: 225px;
 }
 
@@ -244,10 +245,6 @@ li {
 
   .service-txt {
     color: #fff;
-  }
-
-  .service-img::before {
-    background-color: rgba(84, 123, 97, 0.6);
   }
 }
 
@@ -385,18 +382,20 @@ li {
   background-color: #222222;
   color: #ffffff;
   font-family: inherit;
+  outline: none;
   border-radius: 10px;
 }
 
 .txt-area {
   margin-bottom: 3px;
   min-height: 80px;
+  resize: none;
 }
 
-.txt-input:focus,
+/*.txt-input:focus,
 .txt-area:focus {
   outline: 1px solid var(--secondary-color);
-}
+}*/
 
 .submit-btn {
   padding: 10px 13.5px;
