@@ -161,9 +161,9 @@ SP => Screen Size - 640px*/
 
 .tab-blk-l .top,
 .bottom {
-  /*max-width: 760px;*/
   height: 430px;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 .tab-blk-l div img {
@@ -196,6 +196,7 @@ SP => Screen Size - 640px*/
 
 .tab-blk-r div {
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 .tab-blk-r div img {
